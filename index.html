@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Formulario encuesta</title>
 </head>
 <body>
     <h1 id="title">Formluario</h1>
     <p id="description">Esto es un formulario de prueba</p>
-    <form action="" id="survey-form">Formluario
-        <label for="name">
-            <input type="text">
+    <form action="" id="survey-form">
+        <label for="name" id="label-name">Nombre: <input type="text" name="name" id="name" placeholder="Ingrese su nombre"></label>
+        <label for="email" id="label-email">E-mail: <input type="email" name="email" id="email" placeholder="Ingrese su e-mail"></label>
+        <label for="age" id="label-number">Edad: <input type="number" name="age" id="number" placeholder="Ingrese su edad"></label>
+        <label for="select-job">¿Cual fue tu posicion de trabajo anterior?
+            <select name="menu" id="dropmenu">
+                <label>Elige una opcion</label>
+               <option disabled selected>Seleccione una opcion</option>
+                <option value="op-1">Opcion 1</option>
+                <option value="op-2">Opcion 2</option>
+                <option value="op-3">Opcion 3</option>
+                <option value="op-4">Opcion 4</option>
+            </select>
         </label>
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
