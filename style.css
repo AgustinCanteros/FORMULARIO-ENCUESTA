@@ -1,8 +1,61 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-#dropmenu{
-    
+@media (max-width: 1000px){
+    #conteiner{
+        padding: 0;
+        margin: 0;
+    }
 }
+
+@media (min-width: 1024px){
+    #conteiner{
+        padding: 5vw 20vw 5vw 20vw;
+        display: grid;
+    }
+}
+
+#title{
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+#description{
+    text-align: center;
+    border-bottom: plum 1px solid;
+    padding-bottom: 2px;
+}
+
+#survey-form{
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: left;
+    height: auto;
+}
+
+#survey-form label{
+    padding-top: 20px;
+    text-align: left;
+}
+
+#survey-form input{
+    display: grid;
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#dropmenu{
+    display: grid;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#pointeros{
+    padding-top: 10px;
+    text-align: left;
+}
+
