@@ -6,14 +6,14 @@
 
 @media (max-width: 1000px){
     #conteiner{
-        padding: 0;
-        margin: 0;
+        padding: .4vw;
+        margin: .4vw;
     }
 }
 
 @media (min-width: 1024px){
     #conteiner{
-        padding: 5vw 20vw 5vw 20vw;
+        padding: 5vw 30vw 5vw 30vw;
         display: grid;
     }
 }
@@ -48,14 +48,46 @@
     margin-top: 5px;
 }
 
-#dropmenu{
+#dropdown{
     display: grid;
     width: 100%;
     margin-top: 5px;
 }
 
-#pointeros{
-    padding-top: 10px;
-    text-align: left;
+#title-check{
+    padding-bottom: 5px;
 }
 
+#radio-check{
+    text-align: left;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;    
+}
+
+#radio-check label{
+    padding: 5px 0 5px 0;
+    display: flex;
+}
+
+#radio-check input{
+    margin: auto 0 auto 0;
+    width: 50px;
+}
+
+#areacomentarios{
+    max-width: 100%;
+    display: grid;
+}
+
+#areacomentarios p{
+    padding: 15px 0 15px 0;
+}
+
+#areacomentarios textarea{
+    padding: 5px;
+}
+
+#submit{
+    margin-top: 15px;
+    height: 50px;
+}
