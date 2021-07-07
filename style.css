@@ -110,18 +110,6 @@ body:before{
 
 #areacomentarios p{
     padding: 15px 0 15px 0;
-<<<<<<< HEAD
-}
-
-#areacomentarios textarea{
-    padding: 5px;
-}
-
-#submit{
-    margin-top: 15px;
-    height: 50px;
-=======
->>>>>>> 8c72392d15371e991eb4d25e1402e64a1fe07a2b
 }
 
 #areacomentarios textarea{
@@ -132,3 +120,4 @@ body:before{
     margin-top: 15px;
     height: 50px;
 }
+
