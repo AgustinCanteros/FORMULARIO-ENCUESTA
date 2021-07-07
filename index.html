@@ -5,39 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
     <title>Formulario encuesta</title>
 </head>
 <body>
+
     <div id="conteiner">
         <!-- TITULO -->
         <h1 id="title">Formluario</h1>
         <p id="description">Esto es un formulario de prueba</p>
         <!-- INPUTS -->
         <form action="" id="survey-form">
-        <label for="name" id="label-name">Nombre: <input type="text" name="name" id="name" placeholder="Ingrese su nombre"></label>
-        <label for="email" id="label-email">E-mail: <input type="email" name="email" id="email" placeholder="Ingrese su e-mail"></label>
-        <label for="age" id="label-number">Edad: <input type="number" name="age" id="number" placeholder="Ingrese su edad"></label>
-        <label for="select-job">¿Cual fue tu posicion de trabajo anterior?
+        <label for="name" id="name-label">Nombre: <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required minlength="5" maxlength="10"></label>
+        <label for="email" id="email-label">E-mail: <input type="email" name="email" id="email" placeholder="Ingrese su e-mail" required minlength="5" maxlength="10"></label>
+        <label for="age" id="number-label">Edad: <input type="number" name="age" id="number" placeholder="Ingrese su edad" min="2"
+            max="115"></label>
+        <label for="dropdown">¿Cual fue tu posicion de trabajo anterior?
             <!-- PRIMER DROPMENU -->
-            <select name="menu" id="dropmenu">
+            <select name="menu" id="dropdown" required>
                 <label>Elige una opcion</label>
-                <option disabled selected>Seleccione una opcion</option>
+                <option disabled="" selected="" value="">Seleccione una opcion</option>
                 <option value="op-1">Opcion 1</option>
                 <option value="op-2">Opcion 2</option>
                 <option value="op-3">Opcion 3</option>
                 <option value="op-4">Opcion 4</option>
             </select>
         </label>
-        <label for="radio-inputs" id="pointeros">
-            <label>¿Que conocimientos posees?</label>
-            <label><input type="radio" id="radio-inputs">JS</label>
-            <label><input type="radio" id="radio-inputs">HTML</label>
-            <label><input type="radio" id="radio-inputs">CSS</label>
-            <label><input type="radio" id="radio-inputs">REACTJS</label>
-        </label>
+
+            <label id="title-check">¿A qué puesto te postularas?</label>
+            <div id="radio-check"> 
+                <label for="js">
+                    <input type="radio" id="js" name="skills" value="js">
+                    JAVASCRIPT
+                </label>
+                <label for="css">
+                    <input type="radio" id="css" name="skills" value="css">
+                    CSS
+                </label>
+                <label for="html">
+                    <input type="radio" id="reactjs" name="skills" value="html">
+                    HTML
+                </label>
+                <label for="reactjs">
+                    <input type="radio" id="reactjs" name="skills" value="reactjs">
+                    REACJS
+                </label>
+            </div>
+
+            <label for="dropdown">¿Cuales son tus hobbies?
+                <!-- PRIMER DROPMENU -->
+                <select name="menu" id="dropdown" required>
+                    <label>Elige una opcion</label>
+                    <option disabled selected value>Seleccione una opcion</option>
+                    <option value="op-1">Opcion 1</option>
+                    <option value="op-2">Opcion 2</option>
+                    <option value="op-3">Opcion 3</option>
+                    <option value="op-4">Opcion 4</option>
+                </select>
+            </label>
+
+            <label id="title-check">¿A qué puesto te postularas?</label>
+            <div id="radio-check">
+                <label for="gym">
+                    <input type="checkbox" id="gym" name="hobbies" value="gym">
+                    GYM
+                </label>
+                <label for="football">
+                    <input type="checkbox" id="football" name="hobbies" value="football">
+                    FOOTBALL
+                </label>
+                <label for="video">
+                    <input type="checkbox" id="video" name="hobbies" value="video">
+                    VIDEO GAMES
+                </label>
+                <label for="read">
+                    <input type="checkbox" id="read" name="hobbies" value="read">
+                    READ
+                </label>
+            </div>
+
+            <div id="areacomentarios">
+                    <p>Dejanos tus comentarios</p>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escribe aqui tu comentario"></textarea>
+            </div>
+            <button type="submit" id="submit">ENVIAR FORMULARIO</button>
+        </div>
+        
         </form>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
